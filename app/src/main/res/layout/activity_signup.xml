@@ -54,6 +54,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="317dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="68dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text="password"
+            app:layout_constraintEnd_toEndOf="@+id/editLastName"
+            app:layout_constraintStart_toStartOf="@+id/editLastName"
+            app:layout_constraintTop_toBottomOf="@+id/editLastName" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

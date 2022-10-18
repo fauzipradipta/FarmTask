@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         signInButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View c){
-                startActivity(new Intent(MainActivity.this, MenuActivity.class));
+                startActivity(new Intent(MainActivity.this, CameraActivity.class));
             }
         });
     }

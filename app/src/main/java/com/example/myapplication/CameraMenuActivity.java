@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-public class MenuActivity extends AppCompatActivity {
+public class CameraMenuActivity extends AppCompatActivity {
 //    Intent cameraIntent =  new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 //    Button enableCamera = findViewById(R.id.enableCamera);
 //    private static final String[] CAMERA_PERMISSION = new String[]{Manifest.permission.CAMERA};

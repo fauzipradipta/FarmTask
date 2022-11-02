@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".SignupActivity" />
-        <activity android:name=".MenuActivity" />
+        <activity android:name=".CameraMenuActivity" />
         <activity android:name=".CameraActivity"/>
     </application>
 

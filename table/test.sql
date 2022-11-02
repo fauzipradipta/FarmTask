@@ -579,3 +579,4 @@ REFERENCES [dbo].[UserTypes] ([UserTypeID])
 GO
 ALTER TABLE [dbo].[Users] CHECK CONSTRAINT [UserTypes_Users_FK1]
 GO
+

@@ -12,10 +12,10 @@ public class ConnectionClass {
 
     @SuppressLint("NewApi")
     public static Connection CONN(){
-         String url="127.0.0.1:1433";
-         String username ="root";
-         String password="Temp123";
-         String db="Greenfield";
+         String url="jdbc:jtds:sqlserver://172.1.2.2:1433;encrypt=true;databaseName=GreenField;user=root;password=Temp123";
+//         String username ="root";
+//         String password="Temp123";
+//         String db="GreenField";
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 
@@ -24,17 +24,14 @@ public class ConnectionClass {
         String ConnURL = null;
 
         try{
-            ConnURL = "jdbc:jtds:sqlserver://" + url + ";"
-                    + "databaseName=" + db + ";user=" + username + ";password="
-                    + password + ";";
+            Class.forName("net.sourceforge.jtds.jdbc.Driver");
+            ConnURL = url;
             conn = DriverManager.getConnection(ConnURL);
         } catch (SQLException se) {
         Log.e("ERROR", se.getMessage());
-    } catch (ClassNotFoundException e) {
-        Log.e("ERROR", e.getMessage());
-    } catch (Exception e) {
-        Log.e("ERROR", e.getMessage());
-    }
+        }  catch (Exception e) {
+            Log.e("ERROR", e.getMessage());
+        }
         return conn;
 
     }
